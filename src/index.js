@@ -5,7 +5,7 @@ export default class Embed extends Component {
   static propTypes = {
     width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    url: PropTypes.string.isRequired()
+    url: PropTypes.string.isRequired
   }
 
   static defaultProps = {
