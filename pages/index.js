@@ -142,12 +142,12 @@ export default class extends Component {
   state = {
     width: 768,
     height: 150,
-    url: 'https://music.apple.com/us/album/plum/1396292262?i=1396292381'
+    url: 'https://music.apple.com/us/album/plum/1396292262?i=1396292381',
   }
 
-  changeUrl = e => this.setState({ url: e.target.value })
-  changeWidth = e => this.setState({ width: Number(e.target.value) })
-  changeHeight = e => this.setState({ height: Number(e.target.value) })
+  changeUrl = (e) => this.setState({ url: e.target.value })
+  changeWidth = (e) => this.setState({ width: Number(e.target.value) })
+  changeHeight = (e) => this.setState({ height: Number(e.target.value) })
 
   render() {
     const { width, height, url } = this.state
@@ -162,7 +162,7 @@ export default class extends Component {
           {' 🎧'}
         </p>
         <p>
-          Made by <a href="https://lachlanjc.me">@lachlanjc</a>
+          Made by <a href="https://lachlanjc.com">@lachlanjc</a>
         </p>
 
         <Nav>
