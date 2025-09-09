@@ -6,7 +6,7 @@ import styles from "./playground.module.css";
 
 export default function Playground() {
   const [url, setUrl] = useState<string>(
-    "https://music.apple.com/us/album/talk-talk-featuring-troye-sivan/1773518270",
+    "https://music.apple.com/us/album/talk-talk-featuring-troye-sivan/1773518270?i=1773518277",
   );
   const [width, setWidth] = useState<number>(768);
   const [height, setHeight] = useState<number>(150);
@@ -34,13 +34,14 @@ export default function Playground() {
           />
           <span>{width}px</span>
         </label>
-        <label className={styles.label}>
+        <div className={styles.label}>
           <span>Height</span>
-          <button onClick={() => setHeight(150)} style={{ marginRight: 4 }}>
-            150px
+          <button onClick={() => setHeight(150)}>150px</button>
+          <button onClick={() => setHeight(175)} style={{ marginInline: 4 }}>
+            175px
           </button>
-          <button onClick={() => setHeight(175)}>175px</button>
-        </label>
+          <button onClick={() => setHeight(450)}>450px (album)</button>
+        </div>
       </section>
 
       <Embed
