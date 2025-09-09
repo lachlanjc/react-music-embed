@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  --color-primary: #ff365d;
+  background-color: var(--color-primary);
+  color: white;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size-adjust: from-font;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: #ff365d;
+    color-scheme: dark;
+  }
+}
+h1 {
+  line-height: 0.875;
+  font-weight: 900;
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: -1rem;
+}
+p,
+nav {
+  font-size: 1.375rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 800;
+}
+a:focus,
+a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: initial;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+article {
+  width: 100%;
+  max-width: 48rem;
+  margin: auto;
+  padding: 3rem 1rem;
+}
+nav {
+  margin: 1rem 0 3rem;
+}
+nav a {
+  margin-right: 1.5rem;
+}
+
+table {
+  width: 100%;
+}
+th {
+  text-align: left;
+}
+th,
+td {
+  padding: 0.5rem 0;
+}
+td {
+  font-family: ui-monospace, Menlo, monospace;
+  font-optical-sizing: 80%;
+}

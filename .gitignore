@@ -8,6 +8,7 @@ build
 dist
 out
 .next
+site/public/llms.txt
 
 # misc
 .DS_Store
